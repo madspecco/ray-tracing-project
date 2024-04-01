@@ -16,10 +16,10 @@ color ray_color(const ray& r) {
 int main()
 {
 	// image
-	double aspect_ratio = 16.0 / 9.0;
+	auto aspect_ratio = 16.0 / 9.0;
 	int image_width = 400;
 
-	// compute image heigth, ensure it is at least 1
+	// compute image height, ensure it is at least 1
 	int image_height = static_cast<int>(image_width / aspect_ratio);
 	image_height = (image_height < 1) ? 1 : image_height;
 
